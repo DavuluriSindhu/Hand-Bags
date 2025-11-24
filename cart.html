@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+        }
+        header {
+            background: #000;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+        .container {
+            width: 80%;
+            margin: 40px auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 18px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background: #222;
+            color: #fff;
+        }
+        img {
+            width: 90px;
+            border-radius: 8px;
+        }
+        .remove-btn {
+            background: red;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .total-box {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .btn {
+            background: #ff3b5f;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            float: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Shopping Cart</h1>
+</header>
+
+<div class="container">
+
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Bag</th>
+            <th>Price</th>
+            <th>Remove</th>
+        </tr>
+
+        <tr>
+            <td>Luxury Leather Bag</td>
+            <td><img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3"></td>
+            <td>₹1,999</td>
+            <td><a href="#" class="remove-btn">Remove</a></td>
+        </tr>
+
+        <tr>
+            <td>Classic Handbag</td>
+            <td><img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7"></td>
+            <td>₹1,499</td>
+            <td><a href="#" class="remove-btn">Remove</a></td>
+        </tr>
+
+    </table>
+
+    <div class="total-box">
+        Total: ₹3,498
+    </div>
+
+    <a href="payment.html" class="btn">Proceed to Payment</a>
+
+</div>
+
+</body>
+</html>
